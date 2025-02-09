@@ -3,6 +3,10 @@ name: Auto Update File and Create PR
 on:
   workflow_dispatch:
 
+# GITHUB_TOKENread-onlyなので、書き込み権限を付与する
+permissions:
+  contents: write
+
 jobs:
   update-file-and-create-pr:
     runs-on: ubuntu-latest
