@@ -6,7 +6,7 @@ on:
 
   # 2. スケジュール実行トリガー
   schedule:
-    - cron: '0 0 * * *' # 毎日0時（UTC）に実行
+    - cron: '*/5 * * * *'
 
   # 3. プッシュイベントトリガー
   push:
@@ -65,5 +65,5 @@ jobs:
 
       - name: Print Trigger Event
         run: |
-          echo "1 Triggered by: ${{ github.event_name }}"
+          echo "Triggered by: ${{ github.event_name }}"
           echo "Event payload: ${{ toJson(github.event) }}"
