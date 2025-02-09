@@ -65,5 +65,5 @@ jobs:
 
       - name: Print Trigger Event
         run: |
-          echo "Triggered by: ${{ github.event_name }}"
+          echo "1 Triggered by: ${{ github.event_name }}"
           echo "Event payload: ${{ toJson(github.event) }}"
