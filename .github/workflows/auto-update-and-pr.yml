@@ -3,9 +3,9 @@ name: Auto Update File and Create PR
 on:
   workflow_dispatch:
 
-# GITHUB_TOKENread-onlyなので、書き込み権限を付与する
 permissions:
-  contents: write
+  contents: write       # GITHUB_TOKEN に書き込み権限を付与
+  pull-requests: write  # プルリクエストの作成権限を付与
 
 jobs:
   update-file-and-create-pr:
