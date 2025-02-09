@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
 
   # 2. スケジュール実行トリガー
-  schedule:
-    - cron: '*/5 * * * *'
+  # schedule:
+  #   - cron: '*/5 * * * *'
 
   # 3. プッシュイベントトリガー
   push:
